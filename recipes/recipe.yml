@@ -18,7 +18,7 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      # - https://copr.fedorainfracloud.org/coprs/elesiuta/picosnitch/repo/fedora-%OS_VERSION%/elesiuta-picosnitch-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/elesiuta/picosnitch/repo/fedora-%OS_VERSION%/elesiuta-picosnitch-fedora-%OS_VERSION%.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       - mullvad-vpn
@@ -27,9 +27,7 @@ modules:
       - python3-smbc
       - system-config-printer
       # - gnome-shell-extension-drive-menu
-      # - picosnitch
-        # ? Only if needs to be layered
-      # or pipx? if needed
+      - picosnitch
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
